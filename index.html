@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div
+      class="container-fluid min-vh-100 d-flex flex-column align-items-center"
+    >
+      <div class="header d-flex justify-content-center">
+        <h1 class="fw-bold fs-2 text-white mt-2">MI LIBRERIA</h1>
+      </div>
+      <div class="header-button">
+        <button id="btnNew" class="rounded p-2 mt-2" type="button">
+          Nuevo Libro
+        </button>
+      </div>
+      <div
+        id="cardContainer"
+        class="main container-lg row justify-content-center gap-4 mt-4"
+      ></div>
+
+      <div
+        id="myModal"
+        class="my-modal rounded d-none d-flex justify-content-center text-white"
+      >
+        <form class="d-flex flex-column gap-1 mt-5" action="">
+          <div class="close-modal text-end">
+            <i id="closeModal" class="fa-solid fa-xmark"></i>
+          </div>
+          <label for="inputTitulo">Título</label>
+          <input
+            type="text"
+            name=""
+            id="inputTitulo"
+            class="rounded border-0 p-1 input"
+            required
+          />
+          <label for="inputAutor">Autor/a</label>
+          <input
+            type="text"
+            name=""
+            id="inputAutor"
+            class="rounded border-0 p-1 input"
+            required
+          />
+          <label for="inputPaginas">Páginas </label>
+          <input
+            type="number"
+            name=""
+            id="inputPaginas"
+            class="rounded border-0 p-1 input"
+            required
+          />
+
+          <button
+            id="btnAgregarLibro"
+            type="button"
+            class="btn btn-success mt-2"
+          >
+            Agregar
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/a84c61e9f7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
